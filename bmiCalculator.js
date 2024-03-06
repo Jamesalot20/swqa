@@ -11,3 +11,4 @@ function getBMICategory(bmi) {
     else if (bmi >= 25 && bmi <= 29.9) return 'Overweight';
     else return 'Obese';
 }
+module.exports = { calculateBMI, getBMICategory };
