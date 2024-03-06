@@ -6,7 +6,7 @@
   "jest": {
   "scripts": {
     "test": "jest",
-    "start": "node cli.js",
+    "start": "node cli.js"
   },
   "keywords": [],
   "author": "",
