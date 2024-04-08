@@ -52,7 +52,7 @@ describe('BMI Calculator', () => {
 
     test('boundary case between overweight and obese', () => {
         // Assuming 30 is the lower boundary for obese
-        const bmi = calculateBMI(68, 195); // Adjust height/weight to get a BMI close to 30
+        const bmi = calculateBMI(68, 200); // Adjust height/weight to get a BMI close to 30
         expect(getBMICategory(bmi)).toBe('Obese');
     });
 });
