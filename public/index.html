@@ -2,14 +2,71 @@
 <html>
 <head>
     <title>BMI Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; 
+            padding: 20px; 
+            background-color: #f4f4f9; 
+            color: #333; 
+        }
+
+        h1 {
+            text-align: center; 
+            color: #4a54f1;
+        }
+
+        form {
+            max-width: 300px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            border-radius: 8px; 
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="button"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4a54f1;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #3a44d1;
+        }
+
+        #result {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.2em;
+            font-weight: bold; 
+        }
+    </style>
 </head>
 <body>
     <h1>BMI Calculator</h1>
     <form id="bmiForm">
         <label for="weightInPounds">Weight (pounds):</label>
-        <input type="text" id="weightInPounds" name="weightInPounds"><br><br>
+        <input type="text" id="weightInPounds" name="weightInPounds"><br>
         <label for="heightInInches">Height (inches):</label>
-        <input type="text" id="heightInInches" name="heightInInches"><br><br>
+        <input type="text" id="heightInInches" name="heightInInches"><br>
         <input type="button" value="Calculate BMI" onclick="calculateBMI()">
     </form>
     <div id="result"></div>
