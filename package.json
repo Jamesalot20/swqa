@@ -7,6 +7,15 @@
     "test": "jest",
     "start": "node cli.js"
   },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ],
+    "coverageDirectory": "coverage"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
