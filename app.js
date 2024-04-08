@@ -1,6 +1,5 @@
 const express = require('express');
-const calculateBMI = require('./bmiCalculator.js');
-const getBMICategory = require('./bmiCalculator.js');
+const { calculateBMI, getBMICategory } = require('./bmiCalculator.js');
 const app = express();
 const port = 3000;
 
