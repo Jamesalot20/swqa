@@ -1,4 +1,4 @@
-function calculateBMI(heightInInches, weightInPounds) {
+function calculateBMI(weightInPounds, heightInInches) {
     const heightInMeters = heightInInches * 0.0254;
     const weightInKilograms = weightInPounds * 0.453592;
     const bmi = weightInKilograms / (heightInMeters * heightInMeters);
